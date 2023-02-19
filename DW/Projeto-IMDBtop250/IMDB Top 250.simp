@@ -1,0 +1,833 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<sim-project version="13.87" multi-file="no" uid="simpea067b1ab77c4c36bb10c4e3773b21a0">
+  <meta>
+    <name>IMDB Top 250</name>
+    <authors>Ana Filipa Simões</authors>
+    <description />
+  </meta>
+  <counters models="1">
+    <entity-names>
+      <counter>
+        <item-type type-id="erd-entity" type="Entity" />
+        <value>14</value>
+      </counter>
+      <counter>
+        <item-type type-id="element-detail" type="Element Detail" />
+        <value>1</value>
+      </counter>
+    </entity-names>
+    <entity-ids>
+      <counter>
+        <item-type type-id="erd-entity" type="Entity" />
+        <value>26</value>
+      </counter>
+      <counter>
+        <item-type type-id="erd-relationship" type="Relationship" />
+        <value>34</value>
+      </counter>
+      <counter>
+        <item-type type-id="universal-connector" type="Universal Connector" />
+        <value>2</value>
+      </counter>
+      <counter>
+        <item-type type-id="element-detail" type="Element Detail" />
+        <value>2</value>
+      </counter>
+      <counter>
+        <item-type type-id="comment-connector" type="Comment Connector" />
+        <value>2</value>
+      </counter>
+    </entity-ids>
+    <diagrams>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.Diagrams.Other.EntityRelationshipDiagram</type>
+        <value>1</value>
+      </counter>
+    </diagrams>
+    <fields>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.DiagramItems.Erd.ErdEntityAttribute</type>
+        <value>42</value>
+      </counter>
+    </fields>
+  </counters>
+  <alias-groups />
+  <management uid="md-4f018910b59a4abdbda6734a6a971eaf" name="" task-id-sequence="0">
+    <working-schedule uid="ws-9a2eb187cd8946c296549ecc006298b4" hours="8" monday="8" tuesday="8" wednesday="8" thursday="8" friday="8" saturday="0" sunday="0" />
+    <persons>
+      <person id="">
+        <first-name>Ana Filipa</first-name>
+        <last-name>Simões</last-name>
+        <role />
+        <e-mail />
+        <phone-number />
+        <description />
+        <color>#00000000</color>
+        <working-schedule uid="ws-dc749080914845bb8f6b731b42a3228f" hours="8" monday="8" tuesday="8" wednesday="8" thursday="8" friday="8" saturday="0" sunday="0" />
+      </person>
+      <person id="">
+        <first-name>Ana Filipa</first-name>
+        <last-name>Simões</last-name>
+        <role />
+        <e-mail />
+        <phone-number />
+        <description />
+        <color>#00000000</color>
+      </person>
+    </persons>
+    <teams />
+    <sprints />
+    <projects />
+    <modules />
+    <tasks />
+    <to-dos />
+  </management>
+  <glossary id="glsr-b72af69070b946f99d082c511d9b4921" />
+  <types default="UML">
+    <type-sets>
+      <type-set file="UmlTypes.xml" />
+    </type-sets>
+    <custom-types>
+      <parameters />
+      <types />
+    </custom-types>
+  </types>
+  <items />
+  <models>
+    <model id="pb37a8719a6044901b3139bdc8a8e1f47_426821376" name="Model1" namespace="" order-index="1">
+      <meta>
+        <authors>
+          <author> </author>
+        </authors>
+        <description />
+        <creation-date>01/28/2023 15:14:30</creation-date>
+        <change-date>01/01/0001 00:00:00</change-date>
+        <revision-count>0</revision-count>
+        <version />
+      </meta>
+      <abstract-items />
+      <sub-models />
+      <diagram type="entity-relationship" id="pa63327270cb947429b51f0b6052a57bc_990335218" name="EntityRelationshipDiagram1" order-index="1" uid="" name-style="" auto-routed-paths="false" default-line-style="default" view-location="-52,0">
+        <style>
+          <background-color index="1" color="#FFFFFFFF" />
+          <background-color index="2" color="#FFFFFFFF" />
+          <background-type type="solid" />
+        </style>
+        <meta>
+          <authors>
+            <author> </author>
+          </authors>
+          <description />
+          <creation-date>01/28/2023 15:14:30</creation-date>
+          <change-date>01/28/2023 17:03:16</change-date>
+          <revision-count>0</revision-count>
+          <version />
+        </meta>
+        <abstract-items>
+          <item id="b92064c74454459b946b43ff67d2acd7" cid="REL003" type="erd-relationship" creator="" creation-date="01/28/2023 15:40:51" from="4883ef38423f4366a1900ef237f9ecba" to="bca1594988144cbbac482301c47a091a">
+            <erd-relation type="Identifying" multiplicity-from="1" multiplicity-to="*">
+              <attribute-pairs>
+                <attribute-pair from-attribute="" to-attribute="" />
+              </attribute-pairs>
+            </erd-relation>
+          </item>
+          <item id="474980cdca93411cbe12b45960e7f3d0" cid="ENT003" type="erd-entity" name="Dim Role" creator="" creation-date="01/28/2023 15:38:47">
+            <entity description="" />
+            <attributes>
+              <attribute uid="a90528068d6484f6981a384ed009b3a53805" cid="EA003" name="Role" type="" type-id="" type-size="" foreign-key="false" primary-key="false" nullable="false" description="" default-value="" default-value-name="" auto-increment="false" creation-date="01/28/2023 15:38:51" />
+            </attributes>
+            <indexes />
+          </item>
+          <item id="b4e423433aa14435aec73f7703f057be" cid="REL006" type="erd-relationship" creator="" creation-date="01/28/2023 15:44:36" from="4883ef38423f4366a1900ef237f9ecba" to="58c120f36c8d4d4f8c66adffe0f6f70c">
+            <erd-relation type="Identifying" multiplicity-from="1" multiplicity-to="*">
+              <attribute-pairs>
+                <attribute-pair from-attribute="" to-attribute="" />
+              </attribute-pairs>
+            </erd-relation>
+          </item>
+          <item id="c97617b689f7475b8818f2c77a017a4a" cid="ENT007" type="erd-entity" name="Dim Date" creator="" creation-date="01/28/2023 15:45:35">
+            <entity description="" />
+            <attributes />
+            <indexes />
+          </item>
+          <item id="c79b4fed2d5f431d9b4b00a5f12fe6ef" cid="ENT010" type="erd-entity" name="Bridge" creator="" creation-date="01/28/2023 15:59:13">
+            <entity description="" />
+            <attributes />
+            <indexes />
+          </item>
+          <item id="fc6638a3fec4473683e738effcfe6cbb" cid="ENT004" type="erd-entity" name="Bridge" creator="" creation-date="01/28/2023 15:39:03">
+            <entity description="" />
+            <attributes />
+            <indexes />
+          </item>
+          <item id="20faffb263c04727a7e616c05333d4ba" cid="REL005" type="erd-relationship" creator="" creation-date="01/28/2023 15:44:31" from="f8c73662bd6f4995822036a83dff92d9" to="58c120f36c8d4d4f8c66adffe0f6f70c">
+            <erd-relation type="Identifying" multiplicity-from="1" multiplicity-to="*">
+              <attribute-pairs>
+                <attribute-pair from-attribute="" to-attribute="" />
+              </attribute-pairs>
+            </erd-relation>
+          </item>
+          <item id="fe9d524dc1ff4fac920feaa308367321" cid="REL007" type="erd-relationship" creator="" creation-date="01/28/2023 15:45:40" from="c97617b689f7475b8818f2c77a017a4a" to="bca1594988144cbbac482301c47a091a">
+            <erd-relation type="Identifying" multiplicity-from="1" multiplicity-to="*">
+              <attribute-pairs>
+                <attribute-pair from-attribute="" to-attribute="" />
+              </attribute-pairs>
+            </erd-relation>
+          </item>
+          <item id="4883ef38423f4366a1900ef237f9ecba" cid="ENT005" type="erd-entity" name="Dim Movie" creator="" creation-date="01/28/2023 15:40:31">
+            <entity description="" />
+            <attributes>
+              <attribute uid="a8dbe115cdeaf4453918406c1ccb2e8f5233" cid="EA005" name="Rate" type="" type-id="" type-size="" foreign-key="false" primary-key="false" nullable="false" description="" default-value="" default-value-name="" auto-increment="false" creation-date="01/28/2023 15:46:36" />
+              <attribute uid="a85f4aaa9cad64e179de84c651acee951271" cid="EA006" name="Gross" type="" type-id="" type-size="" foreign-key="false" primary-key="false" nullable="false" description="" default-value="" default-value-name="" auto-increment="false" creation-date="01/28/2023 15:49:50" />
+              <attribute uid="ad82283ff105b4d35b9827f7483f8e187593" cid="EA019" name="Runtime" type="" type-id="" type-size="" foreign-key="false" primary-key="false" nullable="false" description="" default-value="" default-value-name="" auto-increment="false" creation-date="01/28/2023 16:13:19" />
+            </attributes>
+            <indexes />
+          </item>
+          <item id="f8c73662bd6f4995822036a83dff92d9" cid="ENT002" type="erd-entity" name="Dim Pessoa" creator="" creation-date="01/28/2023 15:38:26">
+            <entity description="" />
+            <attributes>
+              <attribute uid="acdac69bad1704640be7b8c1b31f5ad3d522" cid="EA002" name="Nome" type="" type-id="" type-size="" foreign-key="false" primary-key="false" nullable="false" description="" default-value="" default-value-name="" auto-increment="false" creation-date="01/28/2023 15:38:41" />
+              <attribute uid="a1f34a97cbff04931b8f328e204f5999e670" cid="EA013" name="Gender" type="" type-id="" type-size="" foreign-key="false" primary-key="false" nullable="false" description="" default-value="" default-value-name="" auto-increment="false" creation-date="01/28/2023 16:02:55" />
+            </attributes>
+            <indexes />
+          </item>
+          <item id="1d94158d640d4293aab9ba06c99efbe2" cid="REL002" type="erd-relationship" creator="" creation-date="01/28/2023 15:39:32" from="474980cdca93411cbe12b45960e7f3d0" to="fc6638a3fec4473683e738effcfe6cbb">
+            <erd-relation type="Identifying" multiplicity-from="1" multiplicity-to="*">
+              <attribute-pairs>
+                <attribute-pair from-attribute="" to-attribute="" />
+              </attribute-pairs>
+            </erd-relation>
+          </item>
+          <item id="bca1594988144cbbac482301c47a091a" cid="ENT001" type="erd-entity" name="Fact Movie Ranking" creator="" creation-date="01/28/2023 15:15:45">
+            <entity description="" />
+            <attributes>
+              <attribute uid="abfbb2510646f4575afbc95d0ff0e9f93513" cid="EA001" name="Date_key" type="" type-id="" type-size="" foreign-key="false" primary-key="false" nullable="false" description="" default-value="" default-value-name="" auto-increment="false" creation-date="01/28/2023 15:16:24" />
+              <attribute uid="ac44281fb413f4cbba4772227a58c31f133" cid="EA009" name="Rank" type="" type-id="" type-size="" foreign-key="false" primary-key="false" nullable="false" description="" default-value="" default-value-name="" auto-increment="false" creation-date="01/28/2023 15:51:15" />
+              <attribute uid="a60ecf5a7d0d648fc936ac855b17e03c4448" cid="EA010" name="Score" type="" type-id="" type-size="" foreign-key="false" primary-key="false" nullable="false" description="" default-value="" default-value-name="" auto-increment="false" creation-date="01/28/2023 15:55:54" />
+              <attribute uid="aa8559be1b59949e5986ed12a4859fa79651" cid="EA011" name="Rate" type="" type-id="" type-size="" foreign-key="false" primary-key="false" nullable="false" description="" default-value="" default-value-name="" auto-increment="false" creation-date="01/28/2023 15:56:11" />
+              <attribute uid="aea778ca6e50f4dcb871e1d861ec5f31a98" cid="EA012" name="Votes" type="" type-id="" type-size="" foreign-key="false" primary-key="false" nullable="false" description="" default-value="" default-value-name="" auto-increment="false" creation-date="01/28/2023 15:56:25" />
+            </attributes>
+            <indexes />
+          </item>
+          <item id="08f1a2005eac48289ed6c6f5d1a422ad" cid="REL011" type="erd-relationship" creator="" creation-date="01/28/2023 15:59:24" from="d1714441272b484481b20a3c17b447d1" to="c79b4fed2d5f431d9b4b00a5f12fe6ef">
+            <erd-relation type="Identifying" multiplicity-from="1" multiplicity-to="*">
+              <attribute-pairs>
+                <attribute-pair from-attribute="" to-attribute="" />
+              </attribute-pairs>
+            </erd-relation>
+          </item>
+          <item id="cb9b905ea91142fbb6775f61bac21bb1" cid="REL010" type="erd-relationship" creator="" creation-date="01/28/2023 15:59:22" from="4883ef38423f4366a1900ef237f9ecba" to="c79b4fed2d5f431d9b4b00a5f12fe6ef">
+            <erd-relation type="Identifying" multiplicity-from="1" multiplicity-to="*">
+              <attribute-pairs>
+                <attribute-pair from-attribute="" to-attribute="" />
+              </attribute-pairs>
+            </erd-relation>
+          </item>
+          <item id="d1714441272b484481b20a3c17b447d1" cid="ENT009" type="erd-entity" name="Dim Genre" creator="" creation-date="01/28/2023 15:59:06">
+            <entity description="" />
+            <attributes />
+            <indexes />
+          </item>
+          <item id="58c120f36c8d4d4f8c66adffe0f6f70c" cid="ENT006" type="erd-entity" name="Bridge" creator="" creation-date="01/28/2023 15:44:18">
+            <entity description="" />
+            <attributes>
+              <attribute uid="a5cf4fcf37be04108895211443061a9cb184" cid="EA004" name="Role" type="" type-id="" type-size="" foreign-key="false" primary-key="false" nullable="false" description="" default-value="" default-value-name="" auto-increment="false" creation-date="01/28/2023 15:45:01" />
+            </attributes>
+            <indexes />
+          </item>
+        </abstract-items>
+        <layer id="361afddd7ecc4280911f2a9c1bc5e811" name="Default" visible="true" enabled="true" locked="false">
+          <item id="bca1594988144cbbac482301c47a091a" iid="c7b80be03e1f4527bf808e08c7488662" creation-date="01/28/2023 15:15:45" order-index="0" type="entity">
+            <layout ax="161" ay="158" awidth="181" aheight="160" x="161" y="158" width="140" height="160" />
+            <erd-entity show-nullability="true" />
+          </item>
+          <item id="f8c73662bd6f4995822036a83dff92d9" iid="1ff5810ba2264eefaa8790cfed1e0f52" creation-date="01/28/2023 15:38:26" order-index="1" type="entity">
+            <layout ax="917" ay="106" awidth="140" aheight="160" x="917" y="106" width="140" height="160" />
+            <erd-entity show-nullability="true" />
+          </item>
+          <item id="4883ef38423f4366a1900ef237f9ecba" iid="663f7d5943314571b588fb1bc0d6d716" creation-date="01/28/2023 15:40:31" order-index="6" type="entity">
+            <layout ax="472" ay="163" awidth="140" aheight="160" x="472" y="163" width="140" height="160" />
+            <erd-entity show-nullability="true" />
+          </item>
+          <item id="b92064c74454459b946b43ff67d2acd7" iid="8f60da03041e40c2b6a00d63cc6237d2" creation-date="01/28/2023 15:40:51" order-index="7" type="relation">
+            <layout start-role-position="25,15" end-role-position="25,-15" line-style="oblique" lock-start-point="true" lock-to-fields="false" auto-path="" x1="472" y1="220" x2="342" y2="231" start-border-pos="0.9109375" end-border-pos="0.363494324684143" start-local-pos="57" name-position="0,20">
+              <points>
+                <point x="472" y="220" />
+                <point x="342" y="231" />
+              </points>
+            </layout>
+            <relation from="4883ef38423f4366a1900ef237f9ecba" from-iid="663f7d5943314571b588fb1bc0d6d716" to="bca1594988144cbbac482301c47a091a" to-iid="c7b80be03e1f4527bf808e08c7488662" />
+          </item>
+          <item id="58c120f36c8d4d4f8c66adffe0f6f70c" iid="c25d8767085249e1a80b30b461cc4030" creation-date="01/28/2023 15:44:18" order-index="9" type="entity">
+            <layout ax="694" ay="82" awidth="140" aheight="160" x="694" y="82" width="140" height="160" />
+            <erd-entity show-nullability="true" />
+          </item>
+          <item id="20faffb263c04727a7e616c05333d4ba" iid="bc754a6004c14a27a8e901f5823202fe" creation-date="01/28/2023 15:44:31" order-index="10" type="relation">
+            <layout start-role-position="25,15" end-role-position="25,-15" line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="917" y1="211" x2="834" y2="116" start-border-pos="0.8359375" end-border-pos="0.303125" start-local-pos="105" end-local-pos="34" name-position="0,20">
+              <points>
+                <point x="917" y="211" />
+                <point x="834" y="116" />
+              </points>
+            </layout>
+            <relation from="f8c73662bd6f4995822036a83dff92d9" from-iid="1ff5810ba2264eefaa8790cfed1e0f52" to="58c120f36c8d4d4f8c66adffe0f6f70c" to-iid="c25d8767085249e1a80b30b461cc4030" />
+          </item>
+          <item id="b4e423433aa14435aec73f7703f057be" iid="bed1ee8fbe4344959c70548dc97d79b7" creation-date="01/28/2023 15:44:36" order-index="11" type="relation">
+            <layout start-role-position="25,15" end-role-position="25,-15" line-style="oblique" lock-to-fields="false" auto-path="" x1="612" y1="217" x2="694" y2="188" start-border-pos="0.335092902183533" end-border-pos="0.835092902183533" name-position="0,20">
+              <points>
+                <point x="612" y="217" />
+                <point x="694" y="188" />
+              </points>
+            </layout>
+            <relation from="4883ef38423f4366a1900ef237f9ecba" from-iid="663f7d5943314571b588fb1bc0d6d716" to="58c120f36c8d4d4f8c66adffe0f6f70c" to-iid="c25d8767085249e1a80b30b461cc4030" />
+          </item>
+          <item id="c97617b689f7475b8818f2c77a017a4a" iid="cf2156441ef74527b7d01d092cfcee03" creation-date="01/28/2023 15:45:35" order-index="12" type="entity">
+            <layout ax="57" ay="482" awidth="170" aheight="160" x="57" y="482" width="170" height="160" rotation-center="-15,0" />
+            <erd-entity show-nullability="true" />
+          </item>
+          <item id="fe9d524dc1ff4fac920feaa308367321" iid="49f3cf58115841e599270917ce055e5e" creation-date="01/28/2023 15:45:40" order-index="13" type="relation">
+            <layout start-role-position="25,15" end-role-position="25,-15" line-style="oblique" start-auto-side="false" lock-start-point="true" lock-to-fields="false" auto-path="" x1="142" y1="482" x2="216" y2="318" start-border-pos="0.125" end-border-pos="0.674123732424573" start-local-pos="85" name-position="0,20">
+              <points>
+                <point x="142" y="482" />
+                <point x="216" y="318" />
+              </points>
+            </layout>
+            <relation from="c97617b689f7475b8818f2c77a017a4a" from-iid="cf2156441ef74527b7d01d092cfcee03" to="bca1594988144cbbac482301c47a091a" to-iid="c7b80be03e1f4527bf808e08c7488662" />
+          </item>
+          <item id="d1714441272b484481b20a3c17b447d1" iid="8c6be9f0e2a6473abf0661bbe2c1b057" creation-date="01/28/2023 15:59:06" order-index="14" type="entity">
+            <layout ax="917" ay="537" awidth="140" aheight="160" x="917" y="537" width="140" height="160" />
+            <erd-entity show-nullability="true" />
+          </item>
+          <item id="c79b4fed2d5f431d9b4b00a5f12fe6ef" iid="439efb79068246a1b873b11a3c0d88f8" creation-date="01/28/2023 15:59:13" order-index="15" type="entity">
+            <layout ax="674" ay="437" awidth="140" aheight="68" x="674" y="437" width="140" height="68" rotation-center="0,46" />
+            <erd-entity show-nullability="true" />
+          </item>
+          <item id="cb9b905ea91142fbb6775f61bac21bb1" iid="7dc81adaac9147719ab11db8b74d0760" creation-date="01/28/2023 15:59:22" order-index="16" type="relation">
+            <layout start-role-position="25,15" end-role-position="25,-15" line-style="oblique" lock-start-point="true" lock-to-fields="false" auto-path="" x1="557" y1="323" x2="701" y2="437" start-border-pos="0.598214285714286" end-border-pos="0.0482866559709821" start-local-pos="85" name-position="0,20">
+              <points>
+                <point x="557" y="323" />
+                <point x="701" y="437" />
+              </points>
+            </layout>
+            <relation from="4883ef38423f4366a1900ef237f9ecba" from-iid="663f7d5943314571b588fb1bc0d6d716" to="c79b4fed2d5f431d9b4b00a5f12fe6ef" to-iid="439efb79068246a1b873b11a3c0d88f8" />
+          </item>
+          <item id="08f1a2005eac48289ed6c6f5d1a422ad" iid="8c8e9278299f40d098e9f353576f9880" creation-date="01/28/2023 15:59:24" order-index="17" type="relation">
+            <layout start-role-position="25,15" end-role-position="25,-15" line-style="oblique" lock-end-point="true" lock-to-fields="false" auto-path="" x1="917" y1="560" x2="814" y2="476" start-border-pos="0.964143753051758" end-border-pos="0.39375" end-local-pos="92" name-position="0,20">
+              <points>
+                <point x="917" y="560" />
+                <point x="814" y="476" />
+              </points>
+            </layout>
+            <relation from="d1714441272b484481b20a3c17b447d1" from-iid="8c6be9f0e2a6473abf0661bbe2c1b057" to="c79b4fed2d5f431d9b4b00a5f12fe6ef" to-iid="439efb79068246a1b873b11a3c0d88f8" />
+          </item>
+          <item id="1d94158d640d4293aab9ba06c99efbe2" iid="aa2d137a86d44c928e7bb5449ad29f90" creation-date="01/28/2023 15:39:32" order-index="5" type="relation">
+            <layout start-role-position="25,15" end-role-position="25,-15" line-style="oblique" lock-to-fields="false" auto-path="" x1="1588" y1="191" x2="1493" y2="218" start-border-pos="0.830188679695129" end-border-pos="0.343632078170776" name-position="0,20">
+              <points>
+                <point x="1588" y="191" />
+                <point x="1493" y="218" />
+              </points>
+            </layout>
+            <relation from="474980cdca93411cbe12b45960e7f3d0" from-iid="3325b61ee1dc48018a2af8d194bba53b" to="fc6638a3fec4473683e738effcfe6cbb" to-iid="921575f0097540158e4bcecb817d3611" />
+          </item>
+          <item id="fc6638a3fec4473683e738effcfe6cbb" iid="921575f0097540158e4bcecb817d3611" creation-date="01/28/2023 15:39:03" order-index="3" type="entity">
+            <layout ax="1353" ay="158" awidth="140" aheight="160" x="1353" y="158" width="140" height="160" />
+            <erd-entity show-nullability="true" />
+          </item>
+          <item id="474980cdca93411cbe12b45960e7f3d0" iid="3325b61ee1dc48018a2af8d194bba53b" creation-date="01/28/2023 15:38:47" order-index="2" type="entity">
+            <layout ax="1588" ay="82" awidth="201" aheight="160" x="1588" y="74" width="201" height="160" rotation-center="30.5,0" />
+            <erd-entity show-nullability="true" />
+          </item>
+        </layer>
+      </diagram>
+      <diagram type="entity-relationship" id="p6d9fcfd40023429280d3772bb291a213_191346910" name="EntityRelationshipDiagram2" order-index="1" uid="" name-style="" auto-routed-paths="false" default-line-style="default" view-location="476,1">
+        <style>
+          <background-color index="1" color="#FFFFFFFF" />
+          <background-color index="2" color="#FFFFFFFF" />
+          <background-type type="solid" />
+        </style>
+        <meta>
+          <authors>
+            <author> </author>
+          </authors>
+          <description />
+          <creation-date>01/28/2023 15:14:30</creation-date>
+          <change-date>01/29/2023 23:41:39</change-date>
+          <revision-count>0</revision-count>
+          <version />
+        </meta>
+        <abstract-items>
+          <item id="283b012cef2a41af9cfdbac407cb6b8b" cid="REL021" type="erd-relationship" creator="" creation-date="01/28/2023 16:31:06" from="di4fdf6111ef0147bfbaca2abb7bef97833247" to="di0ec1dd4be79a4aef98cd1a3b95c3451b7928">
+            <erd-relation type="Identifying" multiplicity-from="1" multiplicity-to="*">
+              <attribute-pairs>
+                <attribute-pair from-attribute="" to-attribute="" />
+              </attribute-pairs>
+            </erd-relation>
+          </item>
+          <item id="di657ab2918c0742ebacc8efc925d050759765" cid="ENT012" type="erd-entity" name="Dim Person" creator="" creation-date="01/28/2023 15:38:26">
+            <entity description="" />
+            <attributes>
+              <attribute uid="af3a376fef80b44ceb4d5531a6b6063a6724" cid="EA028" name="Person Key (PK)" type="" type-id="" type-size="" foreign-key="false" primary-key="true" nullable="false" description="" default-value="" default-value-name="" auto-increment="false" creation-date="01/29/2023 00:45:07" />
+              <attribute uid="acdac69bad1704640be7b8c1b31f5ad3d522" cid="EA002" name="Name" type="" type-id="" type-size="" foreign-key="false" primary-key="false" nullable="false" description="" default-value="" default-value-name="" auto-increment="false" creation-date="01/28/2023 15:38:41" />
+              <attribute uid="a1f34a97cbff04931b8f328e204f5999e670" cid="EA013" name="Gender" type="" type-id="" type-size="" foreign-key="false" primary-key="false" nullable="false" description="" default-value="" default-value-name="" auto-increment="false" creation-date="01/28/2023 16:02:55" />
+            </attributes>
+            <indexes />
+          </item>
+          <item id="di4fdf6111ef0147bfbaca2abb7bef97833247" cid="ENT022" type="erd-entity" name="Group People" creator="" creation-date="01/28/2023 15:39:03">
+            <entity description="" />
+            <attributes>
+              <attribute uid="a2cc257a49bde43d9ae52b4cff31f1073891" cid="EA022" name="Group_People_Key (PK)" type="" type-id="" type-size="" foreign-key="false" primary-key="true" nullable="false" description="" default-value="" default-value-name="" auto-increment="false" creation-date="01/28/2023 16:31:34" />
+            </attributes>
+            <indexes />
+          </item>
+          <item id="32ad002f69ae49ad820a8ce5b9db6489" cid="REL026" type="erd-relationship" creator="" creation-date="01/29/2023 18:39:04" from="did46e915d6c2949bab6fe67bf5aa0143b7928" to="di43646f2214e14f98b9a7026454ee94dc7928">
+            <erd-relation type="Identifying" multiplicity-from="1" multiplicity-to="*">
+              <attribute-pairs>
+                <attribute-pair from-attribute="" to-attribute="" />
+              </attribute-pairs>
+            </erd-relation>
+          </item>
+          <item id="6763f2de320f49608671fa155ec4009c" cid="REL028" type="erd-relationship" creator="" creation-date="01/29/2023 18:40:04" from="di4fdf6111ef0147bfbaca2abb7bef97833247" to="di43646f2214e14f98b9a7026454ee94dc7928">
+            <erd-relation type="Identifying" multiplicity-from="1" multiplicity-to="*">
+              <attribute-pairs>
+                <attribute-pair from-attribute="" to-attribute="a69afe08c71c042df8561dd62b509018055" />
+              </attribute-pairs>
+            </erd-relation>
+          </item>
+          <item id="di5c55b883ce8241dbac221fc84ba87bcb7928" cid="ENT016" type="erd-entity" name="Bridge" creator="" creation-date="01/28/2023 15:44:18">
+            <entity description="" />
+            <attributes>
+              <attribute uid="a5cf4fcf37be04108895211443061a9cb184" cid="EA004" name="Role" type="" type-id="" type-size="" foreign-key="false" primary-key="false" nullable="false" description="" default-value="" default-value-name="" auto-increment="false" creation-date="01/28/2023 15:45:01" />
+            </attributes>
+            <indexes />
+          </item>
+          <item id="di23f23376acb64816a891b05c5fd398887928" cid="REL015" type="erd-relationship" creator="" creation-date="01/28/2023 15:44:31" from="di4624239bd8c74171ad79449eab57db387928" to="di43646f2214e14f98b9a7026454ee94dc7928">
+            <erd-relation type="Identifying" multiplicity-from="1" multiplicity-to="*">
+              <attribute-pairs>
+                <attribute-pair from-attribute="" to-attribute="aa8559be1b59949e5986ed12a4859fa79651" />
+              </attribute-pairs>
+            </erd-relation>
+          </item>
+          <item id="bf13ef0c48f94769b1235e7e75e3e7d6" cid="REL033" type="erd-relationship" creator="" creation-date="01/29/2023 23:41:39" from="did46e915d6c2949bab6fe67bf5aa0143b7928" to="dib1c4c064476a404fab5acbf5588c7c378076">
+            <erd-relation type="Identifying" multiplicity-from="1" multiplicity-to="1">
+              <attribute-pairs>
+                <attribute-pair from-attribute="a1a219212e4004aaa929fd6a99aa75e77696" to-attribute="" />
+              </attribute-pairs>
+            </erd-relation>
+          </item>
+          <item id="di4a120759f5264cae833b20cb99871f5a9765" cid="ENT018" type="erd-entity" name="Dim Genre" creator="" creation-date="01/28/2023 15:59:06">
+            <entity description="" />
+            <attributes>
+              <attribute uid="afaa8f3202ec04938894dc03b734ea88f675" cid="EA029" name="Genre Key (PK)" type="" type-id="" type-size="" foreign-key="false" primary-key="true" nullable="false" description="" default-value="" default-value-name="" auto-increment="false" creation-date="01/29/2023 00:48:31" />
+              <attribute uid="ac4a288d26cf440cfa063db5b7a44d9c2408" cid="EA030" name="Genre Name" type="" type-id="" type-size="" foreign-key="false" primary-key="false" nullable="false" description="" default-value="" default-value-name="" auto-increment="false" creation-date="01/29/2023 00:50:54" />
+            </attributes>
+            <indexes />
+          </item>
+          <item id="did9abdc3ebeca4a75a580f1cc1e600de59765" cid="REL014" type="erd-relationship" creator="" creation-date="01/28/2023 15:40:51" from="did46e915d6c2949bab6fe67bf5aa0143b7928" to="di43646f2214e14f98b9a7026454ee94dc7928">
+            <erd-relation type="Identifying" multiplicity-from="1" multiplicity-to="*">
+              <attribute-pairs>
+                <attribute-pair from-attribute="a28cb041fe0de4dd0959c6027c2c73d79843" to-attribute="a56161d794cbe4f30a71e36781098c37d743" />
+              </attribute-pairs>
+            </erd-relation>
+          </item>
+          <item id="di4624239bd8c74171ad79449eab57db387928" cid="ENT012" type="erd-entity" name="Dim Person" creator="" creation-date="01/28/2023 15:38:26">
+            <entity description="" />
+            <attributes>
+              <attribute uid="af3a376fef80b44ceb4d5531a6b6063a6724" cid="EA028" name="Person_key (PK)" type="" type-id="" type-size="" foreign-key="false" primary-key="true" nullable="false" description="" default-value="" default-value-name="" auto-increment="false" creation-date="01/29/2023 00:45:07" />
+              <attribute uid="acdac69bad1704640be7b8c1b31f5ad3d522" cid="EA002" name="Name" type="" type-id="" type-size="" foreign-key="false" primary-key="false" nullable="false" description="" default-value="" default-value-name="" auto-increment="false" creation-date="01/28/2023 15:38:41" />
+            </attributes>
+            <indexes />
+          </item>
+          <item id="ace25f83e32e4709b24daeb4573303df" cid="REL022" type="erd-relationship" creator="" creation-date="01/29/2023 00:56:05" from="fbe7a1c39990486799c86769a8b950bc" to="63b39d96c9ec4c69adf7a585abd38235">
+            <erd-relation type="Identifying" multiplicity-from="1" multiplicity-to="*">
+              <attribute-pairs>
+                <attribute-pair from-attribute="a830f96cc839442c3a7c16d8ab6b9f726742" to-attribute="" />
+              </attribute-pairs>
+            </erd-relation>
+          </item>
+          <item id="di71bd89231e524df89c746055c946c6309765" cid="REL012" type="erd-relationship" creator="" creation-date="01/28/2023 15:39:28" from="di4fdf6111ef0147bfbaca2abb7bef97833247" to="di43646f2214e14f98b9a7026454ee94dc7928">
+            <style style-name="Custom Style" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#3A555555" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFF" accuracy="0.9">
+              <text-style type="name" color="#555555" font="Segoe UI;11.25;B" />
+              <text-style type="part-header" color="#1E1E1E" font="Verdana;9;I" />
+              <text-style type="text" color="#555555" font="Segoe UI;9.75;" horizontal-alignment="left" />
+              <text-style type="tagged-value" color="#555555" font="Segoe UI;9.75;" />
+              <text-style type="stereotype" color="#555555" font="Segoe UI;9;I" />
+              <background type="solid" colors="#F2F2F2,#F2F2F2" />
+              <border color="#000000" width="2" />
+              <label-connector color="#80000000" dash-style="Dash" />
+              <alternate-styles>
+                <alternate-style style-name="Alternate" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#322A2A2A" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFF" accuracy="0.9">
+                  <text-style type="name" color="#E9E9E9" font="Segoe UI;11.25;B" />
+                  <text-style type="part-header" color="#1E1E1E" font="Verdana;9;I" />
+                  <text-style type="text" color="#E9E9E9" font="Segoe UI;9.75;" horizontal-alignment="left" />
+                  <text-style type="tagged-value" color="#E9E9E9" font="Segoe UI;9.75;" />
+                  <text-style type="stereotype" color="#E9E9E9" font="Segoe UI;9;I" />
+                  <background type="solid" colors="#203D85,#203D85" />
+                  <border color="#000000" width="2" />
+                  <label-connector color="#80000000" dash-style="Dash" />
+                </alternate-style>
+              </alternate-styles>
+            </style>
+            <erd-relation type="Identifying" multiplicity-from="1" multiplicity-to="*">
+              <attribute-pairs>
+                <attribute-pair from-attribute="" to-attribute="a69afe08c71c042df8561dd62b509018055" />
+              </attribute-pairs>
+            </erd-relation>
+          </item>
+          <item id="di93b21d446ab240fcb5222d370f8579e67928" cid="REL019" type="erd-relationship" creator="" creation-date="01/28/2023 15:59:24" from="di804381e7cd604da287e54103ee6207c07928" to="63b39d96c9ec4c69adf7a585abd38235">
+            <erd-relation type="Identifying" multiplicity-from="1" multiplicity-to="*">
+              <attribute-pairs>
+                <attribute-pair from-attribute="" to-attribute="" />
+              </attribute-pairs>
+            </erd-relation>
+          </item>
+          <item id="0f225ccc1b454491aa75879a966b8bf5" cid="REL029" type="erd-relationship" creator="" creation-date="01/29/2023 18:40:17" from="di4fdf6111ef0147bfbaca2abb7bef97833247" to="dib1c4c064476a404fab5acbf5588c7c378076">
+            <erd-relation type="Identifying" multiplicity-from="1" multiplicity-to="1..*">
+              <attribute-pairs>
+                <attribute-pair from-attribute="a2cc257a49bde43d9ae52b4cff31f1073891" to-attribute="a69afe08c71c042df8561dd62b509018055" />
+              </attribute-pairs>
+            </erd-relation>
+          </item>
+          <item id="diaeccbe7d93da4cea9c2828580dbc8b817928" cid="REL016" type="erd-relationship" creator="" creation-date="01/28/2023 15:44:36" from="di43646f2214e14f98b9a7026454ee94dc7928" to="di5c55b883ce8241dbac221fc84ba87bcb7928">
+            <erd-relation type="Identifying" multiplicity-from="1" multiplicity-to="*">
+              <attribute-pairs>
+                <attribute-pair from-attribute="" to-attribute="" />
+              </attribute-pairs>
+            </erd-relation>
+          </item>
+          <item id="di0ec1dd4be79a4aef98cd1a3b95c3451b7928" cid="ENT014" type="erd-entity" name="Bridge Group People - Person" creator="" creation-date="01/28/2023 15:39:03">
+            <entity description="" />
+            <attributes>
+              <attribute uid="aa8300eaa46cb44809d017a6df53b5dcd984" cid="EA023" name="Group_People_key (FK)" type="" type-id="" type-size="" foreign-key="true" primary-key="false" nullable="false" description="" default-value="" default-value-name="" auto-increment="false" creation-date="01/28/2023 16:31:48" />
+              <attribute uid="af3c9aa3e6da94a0991535a6cb3d404b529" cid="EA024" name="Person_key (FK)" type="" type-id="" type-size="" foreign-key="true" primary-key="false" nullable="false" description="" default-value="" default-value-name="" auto-increment="false" creation-date="01/28/2023 16:32:01" />
+              <attribute uid="a03a88cc114574eada3ef271539b52520431" cid="EA025" name="Role" type="" type-id="" type-size="" foreign-key="false" primary-key="false" nullable="false" description="" default-value="" default-value-name="" auto-increment="false" creation-date="01/28/2023 16:32:15" />
+            </attributes>
+            <indexes />
+          </item>
+          <item id="difb3ac28d68074e5ca539715514c083a47928" cid="REL013" type="erd-relationship" creator="" creation-date="01/28/2023 15:39:32" from="di4624239bd8c74171ad79449eab57db387928" to="di0ec1dd4be79a4aef98cd1a3b95c3451b7928">
+            <erd-relation type="Identifying" multiplicity-from="1" multiplicity-to="*">
+              <attribute-pairs>
+                <attribute-pair from-attribute="" to-attribute="" />
+              </attribute-pairs>
+            </erd-relation>
+          </item>
+          <item id="di90e58318d46e4cf3a4b200e1a50b10117928" cid="ENT013" type="erd-entity" name="Dim Role" creator="" creation-date="01/28/2023 15:38:47">
+            <entity description="" />
+            <attributes>
+              <attribute uid="a90528068d6484f6981a384ed009b3a53805" cid="EA003" name="Role" type="" type-id="" type-size="" foreign-key="false" primary-key="false" nullable="false" description="" default-value="" default-value-name="" auto-increment="false" creation-date="01/28/2023 15:38:51" />
+            </attributes>
+            <indexes />
+          </item>
+          <item id="di1b14c007dcc14e3dab4b706c325e37c59765" cid="ENT017" type="erd-entity" name="Dim Date" creator="" creation-date="01/28/2023 15:45:35">
+            <entity description="" />
+            <attributes>
+              <attribute uid="ac0881e8675bb486fa7e30ebf3c68be8247" cid="EA034" name="Date Key (PK)" type="" type-id="" type-size="" foreign-key="false" primary-key="true" nullable="false" description="" default-value="" default-value-name="" auto-increment="false" creation-date="01/29/2023 01:02:43" />
+              <attribute uid="ac2256d79e0b14200b0d5aa975cd4ca4c547" cid="EA035" name="Full Date" type="" type-id="" type-size="" foreign-key="false" primary-key="false" nullable="false" description="" default-value="" default-value-name="" auto-increment="false" creation-date="01/29/2023 01:02:54" />
+              <attribute uid="a9eae22330b69474098e88cdf1dd03f48217" cid="EA036" name="Year" type="" type-id="" type-size="" foreign-key="false" primary-key="false" nullable="false" description="" default-value="" default-value-name="" auto-increment="false" creation-date="01/29/2023 01:03:00" />
+              <attribute uid="aae5d62bf33f6420c9c37e48973672ab2611" cid="EA037" name="Decade" type="" type-id="" type-size="" foreign-key="false" primary-key="false" nullable="false" description="" default-value="" default-value-name="" auto-increment="false" creation-date="01/29/2023 01:03:10" />
+            </attributes>
+            <indexes />
+          </item>
+          <item id="dib1c4c064476a404fab5acbf5588c7c378076" cid="ENT025" type="erd-entity" name="Fact Movie Evaluation" creator="" creation-date="01/28/2023 15:15:45">
+            <entity description="" />
+            <attributes>
+              <attribute uid="a56161d794cbe4f30a71e36781098c37d743" cid="EA020" name="Movie_key (PK, FK)" type="" type-id="" type-size="" foreign-key="true" primary-key="true" nullable="false" description="" default-value="" default-value-name="" auto-increment="false" creation-date="01/28/2023 16:24:01" />
+              <attribute uid="a69afe08c71c042df8561dd62b509018055" cid="EA026" name="Group_People_key (FK)" type="" type-id="" type-size="" foreign-key="true" primary-key="false" nullable="false" description="" default-value="" default-value-name="" auto-increment="false" creation-date="01/28/2023 16:36:02" />
+              <attribute uid="ab03a11b5561d459195ed7915565eb1e4866" cid="EA038" name="Group_Genre_key (FK)" type="" type-id="" type-size="" foreign-key="true" primary-key="false" nullable="false" description="" default-value="" default-value-name="" auto-increment="false" creation-date="01/29/2023 01:05:24" />
+              <attribute uid="aea778ca6e50f4dcb871e1d861ec5f31a98" cid="EA012" name="Number of votes" type="" type-id="" type-size="" foreign-key="false" primary-key="false" nullable="false" description="" default-value="" default-value-name="" auto-increment="false" creation-date="01/28/2023 15:56:25" />
+              <attribute uid="aa8559be1b59949e5986ed12a4859fa79651" cid="EA011" name="Rating" type="" type-id="" type-size="" foreign-key="false" primary-key="false" nullable="false" description="" default-value="" default-value-name="" auto-increment="false" creation-date="01/28/2023 15:56:11" />
+              <attribute uid="ac44281fb413f4cbba4772227a58c31f133" cid="EA009" name="Score" type="" type-id="" type-size="" foreign-key="false" primary-key="false" nullable="false" description="" default-value="" default-value-name="" auto-increment="false" creation-date="01/28/2023 15:51:15" />
+              <attribute uid="a6e01a59b09df4602ab98a8cee22cd829436" cid="EA040" name="Diff Rating - Score" type="" type-id="" type-size="" foreign-key="false" primary-key="false" nullable="false" description="" default-value="" default-value-name="" auto-increment="false" creation-date="01/29/2023 20:32:43" />
+            </attributes>
+            <indexes />
+          </item>
+          <item id="di605f90818a6e451f8194bc2ce92a7bd27928" cid="REL017" type="erd-relationship" creator="" creation-date="01/28/2023 15:45:40" from="dide79a655f65e43f19d9b14de6ffec6d77928" to="di43646f2214e14f98b9a7026454ee94dc7928">
+            <erd-relation type="Identifying" multiplicity-from="1" multiplicity-to="*">
+              <attribute-pairs>
+                <attribute-pair from-attribute="" to-attribute="a8b4a47d4bf0f44e0b9937ac22d5e127f391" />
+              </attribute-pairs>
+            </erd-relation>
+          </item>
+          <item id="di804381e7cd604da287e54103ee6207c07928" cid="ENT018" type="erd-entity" name="Dim Genre" creator="" creation-date="01/28/2023 15:59:06">
+            <entity description="" />
+            <attributes>
+              <attribute uid="afaa8f3202ec04938894dc03b734ea88f675" cid="EA029" name="Genre_key (PK)" type="" type-id="" type-size="" foreign-key="false" primary-key="true" nullable="false" description="" default-value="" default-value-name="" auto-increment="false" creation-date="01/29/2023 00:48:31" />
+              <attribute uid="ac4a288d26cf440cfa063db5b7a44d9c2408" cid="EA030" name="Genre" type="" type-id="" type-size="" foreign-key="false" primary-key="false" nullable="false" description="" default-value="" default-value-name="" auto-increment="false" creation-date="01/29/2023 00:50:54" />
+            </attributes>
+            <indexes />
+          </item>
+          <item id="fbe7a1c39990486799c86769a8b950bc" cid="ENT024" type="erd-entity" name="Genre Group" creator="" creation-date="01/29/2023 00:55:15">
+            <entity description="" />
+            <attributes>
+              <attribute uid="a830f96cc839442c3a7c16d8ab6b9f726742" cid="EA033" name="Group_Genre_key (PK)" type="" type-id="" type-size="" foreign-key="false" primary-key="true" nullable="false" description="" default-value="" default-value-name="" auto-increment="false" creation-date="01/29/2023 00:57:05" />
+            </attributes>
+            <indexes />
+          </item>
+          <item id="di43646f2214e14f98b9a7026454ee94dc7928" cid="ENT011" type="erd-entity" name="Fact Movie Ranking" creator="" creation-date="01/28/2023 15:15:45">
+            <entity description="" />
+            <attributes>
+              <attribute uid="a8b4a47d4bf0f44e0b9937ac22d5e127f391" cid="EA016" name="IMDB year (FK)" type="" type-id="" type-size="" foreign-key="true" primary-key="true" nullable="false" description="" default-value="" default-value-name="" auto-increment="false" creation-date="01/28/2023 16:09:02" />
+              <attribute uid="a56161d794cbe4f30a71e36781098c37d743" cid="EA020" name="Movie_key (FK)" type="" type-id="" type-size="" foreign-key="true" primary-key="true" nullable="false" description="" default-value="" default-value-name="" auto-increment="false" creation-date="01/28/2023 16:24:01" />
+              <attribute uid="a69afe08c71c042df8561dd62b509018055" cid="EA026" name="Group_People_key (FK)" type="" type-id="" type-size="" foreign-key="true" primary-key="false" nullable="false" description="" default-value="" default-value-name="" auto-increment="false" creation-date="01/28/2023 16:36:02" />
+              <attribute uid="ab03a11b5561d459195ed7915565eb1e4866" cid="EA038" name="Group_Genre_key (FK)" type="" type-id="" type-size="" foreign-key="true" primary-key="false" nullable="false" description="" default-value="" default-value-name="" auto-increment="false" creation-date="01/29/2023 01:05:24" />
+              <attribute uid="ac44281fb413f4cbba4772227a58c31f133" cid="EA009" name="Ranking" type="" type-id="" type-size="" foreign-key="false" primary-key="false" nullable="false" description="" default-value="" default-value-name="" auto-increment="false" creation-date="01/28/2023 15:51:15" />
+              <attribute uid="a79c1a0a77f44407582dde24a6a92bb1b335" cid="EA041" name="Diff IMDB year - Movie year" type="" type-id="" type-size="" foreign-key="false" primary-key="false" nullable="false" description="" default-value="" default-value-name="" auto-increment="false" creation-date="01/29/2023 23:32:03" />
+            </attributes>
+            <indexes />
+          </item>
+          <item id="63b39d96c9ec4c69adf7a585abd38235" cid="ENT023" type="erd-entity" name="Bridge Genre Group - Genre" creator="" creation-date="01/29/2023 00:53:17">
+            <entity description="" />
+            <attributes>
+              <attribute uid="a3767299234504bf5b79648ad74c3283c254" cid="EA031" name="Group_Genre_key (FK)" type="" type-id="" type-size="" foreign-key="true" primary-key="false" nullable="false" description="" default-value="" default-value-name="" auto-increment="false" creation-date="01/29/2023 00:54:09" />
+              <attribute uid="a8de835047a984439b47a446fdb92f97d326" cid="EA032" name="Genre_key (FK)" type="" type-id="" type-size="" foreign-key="true" primary-key="false" nullable="false" description="" default-value="" default-value-name="" auto-increment="false" creation-date="01/29/2023 00:54:07" />
+            </attributes>
+            <indexes />
+          </item>
+          <item id="dief3d581a37a44739afc1436c826d1f119765" cid="REL019" type="erd-relationship" creator="" creation-date="01/28/2023 15:59:24" from="di804381e7cd604da287e54103ee6207c07928" to="63b39d96c9ec4c69adf7a585abd38235">
+            <erd-relation type="Identifying" multiplicity-from="1" multiplicity-to="*">
+              <attribute-pairs>
+                <attribute-pair from-attribute="" to-attribute="" />
+              </attribute-pairs>
+            </erd-relation>
+          </item>
+          <item id="did46e915d6c2949bab6fe67bf5aa0143b7928" cid="ENT015" type="erd-entity" name="Dim Movie" creator="" creation-date="01/28/2023 15:40:31">
+            <entity description="" />
+            <attributes>
+              <attribute uid="a28cb041fe0de4dd0959c6027c2c73d79843" cid="EA021" name="Movie_key (PK)" type="" type-id="" type-size="" foreign-key="false" primary-key="true" nullable="false" description="" default-value="" default-value-name="" auto-increment="false" creation-date="01/28/2023 16:24:09" />
+              <attribute uid="aacf47444fc7842e19de377d8291fabb8860" cid="EA014" name="Title (NK)" type="" type-id="" type-size="" foreign-key="false" primary-key="false" nullable="false" description="" default-value="" default-value-name="" auto-increment="false" creation-date="01/28/2023 16:07:29" />
+              <attribute uid="a1a219212e4004aaa929fd6a99aa75e77696" cid="EA027" name="IMDB link (NK)" type="" type-id="" type-size="" foreign-key="false" primary-key="false" nullable="false" description="" default-value="" default-value-name="" auto-increment="false" creation-date="01/29/2023 00:34:27" />
+              <attribute uid="a5404d83d21f046c1bdb27fc232ec500d589" cid="EA018" name="Runtime" type="" type-id="" type-size="" foreign-key="false" primary-key="false" nullable="false" description="" default-value="" default-value-name="" auto-increment="false" creation-date="01/28/2023 16:12:12" />
+              <attribute uid="a953797a223454bdba07a4fc2c6ca3b24462" cid="EA017" name="Gross" type="" type-id="" type-size="" foreign-key="false" primary-key="false" nullable="false" description="" default-value="" default-value-name="" auto-increment="false" creation-date="01/28/2023 16:10:09" />
+              <attribute uid="a34420bb89445421c8d220957f60aed69116" cid="EA039" name="Year" type="" type-id="" type-size="" foreign-key="false" primary-key="false" nullable="false" description="" default-value="" default-value-name="" auto-increment="false" creation-date="01/29/2023 18:31:38" />
+            </attributes>
+            <indexes />
+          </item>
+          <item id="di50440e2a8a1145029ee392deed9ace7a7928" cid="ENT019" type="erd-entity" name="Bridge" creator="" creation-date="01/28/2023 15:59:13">
+            <entity description="" />
+            <attributes />
+            <indexes />
+          </item>
+          <item id="dic18732e1a0484fab8f6add392126c6479765" cid="REL017" type="erd-relationship" creator="" creation-date="01/28/2023 15:45:40" from="dide79a655f65e43f19d9b14de6ffec6d77928" to="di43646f2214e14f98b9a7026454ee94dc7928">
+            <erd-relation type="Identifying" multiplicity-from="1" multiplicity-to="*">
+              <attribute-pairs>
+                <attribute-pair from-attribute="" to-attribute="" />
+              </attribute-pairs>
+            </erd-relation>
+          </item>
+          <item id="95775142a943424e80a3402a5a7e6bfd" cid="REL032" type="erd-relationship" creator="" creation-date="01/29/2023 18:41:13" from="fbe7a1c39990486799c86769a8b950bc" to="dib1c4c064476a404fab5acbf5588c7c378076">
+            <erd-relation type="Identifying" multiplicity-from="1" multiplicity-to="*">
+              <attribute-pairs>
+                <attribute-pair from-attribute="" to-attribute="" />
+              </attribute-pairs>
+            </erd-relation>
+          </item>
+          <item id="dide79a655f65e43f19d9b14de6ffec6d77928" cid="ENT017" type="erd-entity" name="Dim Date" creator="" creation-date="01/28/2023 15:45:35">
+            <entity description="" />
+            <attributes>
+              <attribute uid="ac0881e8675bb486fa7e30ebf3c68be8247" cid="EA034" name="Date Key (PK)" type="" type-id="" type-size="" foreign-key="false" primary-key="true" nullable="false" description="" default-value="" default-value-name="" auto-increment="false" creation-date="01/29/2023 01:02:43" />
+              <attribute uid="ac2256d79e0b14200b0d5aa975cd4ca4c547" cid="EA035" name="Full Date" type="" type-id="" type-size="" foreign-key="false" primary-key="false" nullable="false" description="" default-value="" default-value-name="" auto-increment="false" creation-date="01/29/2023 01:02:54" />
+              <attribute uid="a9eae22330b69474098e88cdf1dd03f48217" cid="EA036" name="Year" type="" type-id="" type-size="" foreign-key="false" primary-key="false" nullable="false" description="" default-value="" default-value-name="" auto-increment="false" creation-date="01/29/2023 01:03:00" />
+              <attribute uid="aae5d62bf33f6420c9c37e48973672ab2611" cid="EA037" name="Decade" type="" type-id="" type-size="" foreign-key="false" primary-key="false" nullable="false" description="" default-value="" default-value-name="" auto-increment="false" creation-date="01/29/2023 01:03:10" />
+            </attributes>
+            <indexes />
+          </item>
+          <item id="56f332f0afe942f8b509bb5455729c02" cid="REL031" type="erd-relationship" creator="" creation-date="01/29/2023 18:41:06" from="fbe7a1c39990486799c86769a8b950bc" to="di43646f2214e14f98b9a7026454ee94dc7928">
+            <erd-relation type="Identifying" multiplicity-from="1" multiplicity-to="*">
+              <attribute-pairs>
+                <attribute-pair from-attribute="a830f96cc839442c3a7c16d8ab6b9f726742" to-attribute="" />
+              </attribute-pairs>
+            </erd-relation>
+          </item>
+          <item id="di80a195fc4894425a99cad041d580c2529765" cid="ENT015" type="erd-entity" name="Dim Movie" creator="" creation-date="01/28/2023 15:40:31">
+            <entity description="" />
+            <attributes>
+              <attribute uid="a28cb041fe0de4dd0959c6027c2c73d79843" cid="EA021" name="Movie key (PK)" type="" type-id="" type-size="" foreign-key="false" primary-key="true" nullable="false" description="" default-value="" default-value-name="" auto-increment="false" creation-date="01/28/2023 16:24:09" />
+              <attribute uid="aacf47444fc7842e19de377d8291fabb8860" cid="EA014" name="Title (NK)" type="" type-id="" type-size="" foreign-key="false" primary-key="false" nullable="false" description="" default-value="" default-value-name="" auto-increment="false" creation-date="01/28/2023 16:07:29" />
+              <attribute uid="a1a219212e4004aaa929fd6a99aa75e77696" cid="EA027" name="IMDBlink (NK)" type="" type-id="" type-size="" foreign-key="false" primary-key="false" nullable="false" description="" default-value="" default-value-name="" auto-increment="false" creation-date="01/29/2023 00:34:27" />
+              <attribute uid="a5404d83d21f046c1bdb27fc232ec500d589" cid="EA018" name="Runtime" type="" type-id="" type-size="" foreign-key="false" primary-key="false" nullable="false" description="" default-value="" default-value-name="" auto-increment="false" creation-date="01/28/2023 16:12:12" />
+            </attributes>
+            <indexes />
+          </item>
+          <item id="did4f08f5fc3964f27bff88422a920d1369765" cid="ENT014" type="erd-entity" name="Bridge Group of People - People" creator="" creation-date="01/28/2023 15:39:03">
+            <entity description="" />
+            <attributes>
+              <attribute uid="aa8300eaa46cb44809d017a6df53b5dcd984" cid="EA023" name="People Group Key (FK)" type="" type-id="" type-size="" foreign-key="true" primary-key="false" nullable="false" description="" default-value="" default-value-name="" auto-increment="false" creation-date="01/28/2023 16:31:48" />
+              <attribute uid="af3c9aa3e6da94a0991535a6cb3d404b529" cid="EA024" name="Person Key (FK)" type="" type-id="" type-size="" foreign-key="true" primary-key="false" nullable="false" description="" default-value="" default-value-name="" auto-increment="false" creation-date="01/28/2023 16:32:01" />
+              <attribute uid="a03a88cc114574eada3ef271539b52520431" cid="EA025" name="Role" type="" type-id="" type-size="" foreign-key="false" primary-key="false" nullable="false" description="" default-value="" default-value-name="" auto-increment="false" creation-date="01/28/2023 16:32:15" />
+            </attributes>
+            <indexes />
+          </item>
+          <item id="di274b0c73dde848f49147d1c3830d838f7928" cid="REL018" type="erd-relationship" creator="" creation-date="01/28/2023 15:59:22" from="did46e915d6c2949bab6fe67bf5aa0143b7928" to="di50440e2a8a1145029ee392deed9ace7a7928">
+            <erd-relation type="Identifying" multiplicity-from="1" multiplicity-to="*">
+              <attribute-pairs>
+                <attribute-pair from-attribute="" to-attribute="" />
+              </attribute-pairs>
+            </erd-relation>
+          </item>
+          <item id="di8a8f745b07e44f60b082ac89675637029765" cid="ENT011" type="erd-entity" name="Fact Movie Ranking" creator="" creation-date="01/28/2023 15:15:45">
+            <entity description="" />
+            <attributes>
+              <attribute uid="a8b4a47d4bf0f44e0b9937ac22d5e127f391" cid="EA016" name="IMDB year (FK)" type="" type-id="" type-size="" foreign-key="true" primary-key="false" nullable="false" description="" default-value="" default-value-name="" auto-increment="false" creation-date="01/28/2023 16:09:02" />
+              <attribute uid="a56161d794cbe4f30a71e36781098c37d743" cid="EA020" name="Movie key (FK)" type="" type-id="" type-size="" foreign-key="true" primary-key="false" nullable="false" description="" default-value="" default-value-name="" auto-increment="false" creation-date="01/28/2023 16:24:01" />
+              <attribute uid="aa185514d63ae4bb09d653d7a6025447d407" cid="EA015" name="Movie Year" type="" type-id="" type-size="" foreign-key="true" primary-key="false" nullable="false" description="" default-value="" default-value-name="" auto-increment="false" creation-date="01/28/2023 16:08:04" />
+              <attribute uid="a69afe08c71c042df8561dd62b509018055" cid="EA026" name="People Group Key (FK)" type="" type-id="" type-size="" foreign-key="true" primary-key="false" nullable="false" description="" default-value="" default-value-name="" auto-increment="false" creation-date="01/28/2023 16:36:02" />
+              <attribute uid="ab03a11b5561d459195ed7915565eb1e4866" cid="EA038" name="Group Genre key (FK)" type="" type-id="" type-size="" foreign-key="true" primary-key="false" nullable="false" description="" default-value="" default-value-name="" auto-increment="false" creation-date="01/29/2023 01:05:24" />
+              <attribute uid="ac44281fb413f4cbba4772227a58c31f133" cid="EA009" name="Rank" type="" type-id="" type-size="" foreign-key="false" primary-key="false" nullable="false" description="" default-value="" default-value-name="" auto-increment="false" creation-date="01/28/2023 15:51:15" />
+              <attribute uid="a60ecf5a7d0d648fc936ac855b17e03c4448" cid="EA010" name="Score" type="" type-id="" type-size="" foreign-key="false" primary-key="false" nullable="false" description="" default-value="" default-value-name="" auto-increment="false" creation-date="01/28/2023 15:55:54" />
+              <attribute uid="aa8559be1b59949e5986ed12a4859fa79651" cid="EA011" name="Rate" type="" type-id="" type-size="" foreign-key="false" primary-key="false" nullable="false" description="" default-value="" default-value-name="" auto-increment="false" creation-date="01/28/2023 15:56:11" />
+              <attribute uid="aea778ca6e50f4dcb871e1d861ec5f31a98" cid="EA012" name="Votes" type="" type-id="" type-size="" foreign-key="false" primary-key="false" nullable="false" description="" default-value="" default-value-name="" auto-increment="false" creation-date="01/28/2023 15:56:25" />
+              <attribute uid="a953797a223454bdba07a4fc2c6ca3b24462" cid="EA017" name="Gross" type="" type-id="" type-size="" foreign-key="false" primary-key="false" nullable="false" description="" default-value="" default-value-name="" auto-increment="false" creation-date="01/28/2023 16:10:09" />
+            </attributes>
+            <indexes />
+          </item>
+          <item id="di497a0a2f5bd54eb7b323454126e1c64f9765" cid="REL013" type="erd-relationship" creator="" creation-date="01/28/2023 15:39:32" from="di4624239bd8c74171ad79449eab57db387928" to="di0ec1dd4be79a4aef98cd1a3b95c3451b7928">
+            <erd-relation type="Identifying" multiplicity-from="1" multiplicity-to="*">
+              <attribute-pairs>
+                <attribute-pair from-attribute="" to-attribute="" />
+              </attribute-pairs>
+            </erd-relation>
+          </item>
+        </abstract-items>
+        <layer id="361afddd7ecc4280911f2a9c1bc5e811" name="Default" visible="true" enabled="true" locked="false">
+          <item id="di43646f2214e14f98b9a7026454ee94dc7928" iid="3d38448ed2db4363b7c210f42a95676a" creation-date="01/28/2023 15:15:45" order-index="0" type="entity">
+            <layout ax="277.3333" ay="285" awidth="236" aheight="237" x="277.3333" y="285" width="140" height="226" rotation-center="0,-23" />
+            <erd-entity show-nullability="true" />
+          </item>
+          <item id="di4624239bd8c74171ad79449eab57db387928" iid="ddd13a4b87934523929af20a8e53e0fe" creation-date="01/28/2023 15:38:26" order-index="1" type="entity">
+            <layout ax="1053.5" ay="-61" awidth="223" aheight="78" x="1053.5" y="-61" width="223" height="78" rotation-center="-41.5,19" />
+            <erd-entity show-nullability="true" />
+          </item>
+          <item id="di0ec1dd4be79a4aef98cd1a3b95c3451b7928" iid="867a3a26e1b741cd81c9f7d46e23c69b" creation-date="01/28/2023 15:39:03" order-index="3" type="entity">
+            <layout ax="675.5" ay="7" awidth="293" aheight="104" x="665.5" y="7" width="293" height="92" rotation-center="-76.5,35" />
+            <erd-entity show-nullability="true" />
+          </item>
+          <item id="difb3ac28d68074e5ca539715514c083a47928" iid="26c91205617142f0ad77c7894a6f3972" creation-date="01/28/2023 15:39:32" order-index="5" type="relation">
+            <layout start-role-position="25,15" end-role-position="25.00001,-15" line-style="oblique" start-auto-side="false" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="1054" y1="-8" x2="968" y2="59" start-border-pos="0.831730768084526" end-border-pos="0.375" start-local-pos="70" end-local-pos="52" name-position="0,20">
+              <points>
+                <point x="1054" y="-8" />
+                <point x="968" y="59" />
+              </points>
+            </layout>
+            <relation from="di4624239bd8c74171ad79449eab57db387928" from-iid="ddd13a4b87934523929af20a8e53e0fe" to="di0ec1dd4be79a4aef98cd1a3b95c3451b7928" to-iid="867a3a26e1b741cd81c9f7d46e23c69b" />
+          </item>
+          <item id="did46e915d6c2949bab6fe67bf5aa0143b7928" iid="cfa7ef4b76a343bc918ac183ff620fdd" show-fields="true" creation-date="01/28/2023 15:40:31" order-index="6" type="entity">
+            <layout ax="715.5" ay="323" awidth="213" aheight="161" x="689.1666" y="323" width="213" height="127" rotation-center="-36.5,16.5" />
+            <erd-entity show-nullability="true" />
+          </item>
+          <item id="dide79a655f65e43f19d9b14de6ffec6d77928" iid="0c021e5f8999448893776b89df311054" creation-date="01/28/2023 15:45:35" order-index="12" type="entity">
+            <layout ax="-73.5" ay="323" awidth="196" aheight="123" x="-73.5" y="323" width="196" height="123" rotation-center="-21.5,-3.5" />
+            <erd-entity show-nullability="true" />
+          </item>
+          <item id="di605f90818a6e451f8194bc2ce92a7bd27928" iid="d5b7178961b145fcaeb39bb73c4f0b49" creation-date="01/28/2023 15:45:40" order-index="13" type="relation">
+            <layout start-role-position="25,15" end-role-position="25,-15" line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="122" y1="384" x2="277" y2="384" start-border-pos="0.375" end-border-pos="0.895042195916176" start-local-pos="69" end-local-pos="99" name-position="0,20">
+              <points>
+                <point x="122" y="384" />
+                <point x="277" y="384" />
+              </points>
+            </layout>
+            <relation from="dide79a655f65e43f19d9b14de6ffec6d77928" from-iid="0c021e5f8999448893776b89df311054" to="di43646f2214e14f98b9a7026454ee94dc7928" to-iid="3d38448ed2db4363b7c210f42a95676a" to-field="a8b4a47d4bf0f44e0b9937ac22d5e127f391" />
+          </item>
+          <item id="di804381e7cd604da287e54103ee6207c07928" iid="458f9e5c324b4093a248d63981f25f49" creation-date="01/28/2023 15:59:06" order-index="14" type="entity">
+            <layout ax="405.5" ay="800.25" awidth="213" aheight="92" x="405.5" y="800.25" width="213" height="92" rotation-center="-36.5,34" />
+            <erd-entity show-nullability="true" />
+          </item>
+          <item id="di93b21d446ab240fcb5222d370f8579e67928" iid="408d898ea53c431b83631edce4d4c7af" creation-date="01/28/2023 15:59:24" order-index="17" type="relation">
+            <layout start-role-position="25,15" end-role-position="25,-15" line-style="oblique" lock-end-point="true" lock-to-fields="false" auto-path="" x1="581" y1="800" x2="690" y2="728" start-border-pos="0.206443464252311" end-border-pos="0.875796183943748" end-local-pos="39" name-position="0,20">
+              <points>
+                <point x="581" y="800" />
+                <point x="690" y="728" />
+              </points>
+            </layout>
+            <relation from="di804381e7cd604da287e54103ee6207c07928" from-iid="458f9e5c324b4093a248d63981f25f49" to="63b39d96c9ec4c69adf7a585abd38235" to-iid="f6f2a4f3f38d43bc84912959bee8389a" />
+          </item>
+          <item id="di4fdf6111ef0147bfbaca2abb7bef97833247" iid="5e3c6079025f42a3b992fe97eb1d493c" creation-date="01/28/2023 15:39:03" order-index="3" type="entity">
+            <layout ax="694.5" ay="199" awidth="255" aheight="68" x="668.1666" y="199" width="201" height="68" rotation-center="-30.5,67" />
+            <erd-entity show-nullability="true" />
+          </item>
+          <item id="283b012cef2a41af9cfdbac407cb6b8b" iid="a8a0079c934047348d179fe079d12303" creation-date="01/28/2023 16:31:06" order-index="18" type="relation">
+            <layout start-role-position="25,15" end-role-position="25,-15" line-style="oblique" start-auto-side="false" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="822" y1="199" x2="822" y2="111" start-border-pos="0.125" end-border-pos="0.625" start-local-pos="100.5" end-local-pos="146.5" name-position="0,20">
+              <points>
+                <point x="822" y="199" />
+                <point x="822" y="111" />
+              </points>
+            </layout>
+            <relation from="di4fdf6111ef0147bfbaca2abb7bef97833247" from-iid="5e3c6079025f42a3b992fe97eb1d493c" to="di0ec1dd4be79a4aef98cd1a3b95c3451b7928" to-iid="867a3a26e1b741cd81c9f7d46e23c69b" />
+          </item>
+          <item id="63b39d96c9ec4c69adf7a585abd38235" iid="f6f2a4f3f38d43bc84912959bee8389a" creation-date="01/29/2023 00:53:17" order-index="19" type="entity">
+            <layout ax="690" ay="686.25" awidth="264" aheight="85" x="680" y="686.25" width="264" height="78.5" rotation-center="-61,42.25" />
+            <erd-entity show-nullability="true" />
+          </item>
+          <item id="fbe7a1c39990486799c86769a8b950bc" iid="080629c6ac0d41ef80ee889624582df9" creation-date="01/29/2023 00:55:15" order-index="20" type="entity">
+            <layout ax="694.1667" ay="540" awidth="255.6666" aheight="68" x="678.5" y="540" width="255.6666" height="68" rotation-center="-38.83331,46" />
+            <erd-entity show-nullability="true" />
+          </item>
+          <item id="ace25f83e32e4709b24daeb4573303df" iid="741daecb42384530bf89f46d38723b36" creation-date="01/29/2023 00:56:05" order-index="21" type="relation">
+            <layout start-role-position="25,15" end-role-position="25,-15" line-style="oblique" lock-start-point="true" lock-to-fields="false" auto-path="" x1="822" y1="608" x2="822" y2="686" start-border-pos="0.625" end-border-pos="0.125" start-local-pos="91.5" name-position="0,20">
+              <points>
+                <point x="822" y="608" />
+                <point x="822" y="686" />
+              </points>
+            </layout>
+            <relation from="fbe7a1c39990486799c86769a8b950bc" from-iid="080629c6ac0d41ef80ee889624582df9" from-field="a830f96cc839442c3a7c16d8ab6b9f726742" to="63b39d96c9ec4c69adf7a585abd38235" to-iid="f6f2a4f3f38d43bc84912959bee8389a" />
+          </item>
+          <item id="dib1c4c064476a404fab5acbf5588c7c378076" iid="2e9c782155fa4b228c8fbdcfcfd8981a" creation-date="01/28/2023 15:15:45" order-index="0" type="entity">
+            <layout ax="1130.667" ay="285" awidth="236" aheight="237" x="1130.667" y="285" width="140" height="226" rotation-center="0,-23" />
+            <erd-entity show-nullability="true" />
+          </item>
+          <item id="32ad002f69ae49ad820a8ce5b9db6489" iid="b14875c32db74398a6467f604562c8db" creation-date="01/29/2023 18:39:04" order-index="22" type="relation">
+            <layout start-role-position="25,15" end-role-position="25,-15" line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="716" y1="404" x2="513" y2="404" start-border-pos="0.874223602484472" end-border-pos="0.375527426160338" start-local-pos="81" end-local-pos="119" name-position="0,20">
+              <points>
+                <point x="716" y="404" />
+                <point x="513" y="404" />
+              </points>
+            </layout>
+            <relation from="did46e915d6c2949bab6fe67bf5aa0143b7928" from-iid="cfa7ef4b76a343bc918ac183ff620fdd" to="di43646f2214e14f98b9a7026454ee94dc7928" to-iid="3d38448ed2db4363b7c210f42a95676a" />
+          </item>
+          <item id="6763f2de320f49608671fa155ec4009c" iid="81bd6efcd8cd48a89eb0a967df177bf3" creation-date="01/29/2023 18:40:04" order-index="24" type="relation">
+            <layout start-role-position="25,15" end-role-position="25,-15" line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="true" auto-path="" x1="694" y1="234" x2="513" y2="364" start-border-pos="0.871323529411765" end-border-pos="0.332805907172996" start-local-pos="35" end-local-pos="79" name-position="0,20">
+              <points>
+                <point x="694" y="234" />
+                <point x="513" y="364" />
+              </points>
+            </layout>
+            <relation from="di4fdf6111ef0147bfbaca2abb7bef97833247" from-iid="5e3c6079025f42a3b992fe97eb1d493c" to="di43646f2214e14f98b9a7026454ee94dc7928" to-iid="3d38448ed2db4363b7c210f42a95676a" to-field="a69afe08c71c042df8561dd62b509018055" />
+          </item>
+          <item id="0f225ccc1b454491aa75879a966b8bf5" iid="2c4f2921b04c49758f4be34b04953a34" creation-date="01/29/2023 18:40:17" order-index="25" type="relation">
+            <layout start-role-position="25,15" end-role-position="25,-15" line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="true" auto-path="" x1="950" y1="240" x2="1131" y2="344" start-border-pos="0.398897058823529" end-border-pos="0.937236286919831" start-local-pos="41" end-local-pos="59" name-position="0,20">
+              <points>
+                <point x="950" y="240" />
+                <point x="1131" y="344" />
+              </points>
+            </layout>
+            <relation from="di4fdf6111ef0147bfbaca2abb7bef97833247" from-iid="5e3c6079025f42a3b992fe97eb1d493c" from-field="a2cc257a49bde43d9ae52b4cff31f1073891" to="dib1c4c064476a404fab5acbf5588c7c378076" to-iid="2e9c782155fa4b228c8fbdcfcfd8981a" to-field="a69afe08c71c042df8561dd62b509018055" />
+          </item>
+          <item id="56f332f0afe942f8b509bb5455729c02" iid="bc13c35115074a088019a3686423aee6" creation-date="01/29/2023 18:41:06" order-index="26" type="relation">
+            <layout start-role-position="25,15" end-role-position="25,-15" line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="true" auto-path="" x1="694" y1="580" x2="513" y2="463" start-border-pos="0.851102941176471" end-border-pos="0.437763713080169" start-local-pos="40" end-local-pos="178" name-position="0,20">
+              <points>
+                <point x="694" y="580" />
+                <point x="513" y="463" />
+              </points>
+            </layout>
+            <relation from="fbe7a1c39990486799c86769a8b950bc" from-iid="080629c6ac0d41ef80ee889624582df9" from-field="a830f96cc839442c3a7c16d8ab6b9f726742" to="di43646f2214e14f98b9a7026454ee94dc7928" to-iid="3d38448ed2db4363b7c210f42a95676a" />
+          </item>
+          <item id="95775142a943424e80a3402a5a7e6bfd" iid="460462b8276043e2bd006f14c3fbc221" creation-date="01/29/2023 18:41:13" order-index="27" type="relation">
+            <layout start-role-position="25,15" end-role-position="25,-15" line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="950" y1="574" x2="1131" y2="457" start-border-pos="0.375" end-border-pos="0.818565400843882" start-local-pos="34" end-local-pos="172" name-position="0,20">
+              <points>
+                <point x="950" y="574" />
+                <point x="1131" y="457" />
+              </points>
+            </layout>
+            <relation from="fbe7a1c39990486799c86769a8b950bc" from-iid="080629c6ac0d41ef80ee889624582df9" to="dib1c4c064476a404fab5acbf5588c7c378076" to-iid="2e9c782155fa4b228c8fbdcfcfd8981a" />
+          </item>
+          <item id="bf13ef0c48f94769b1235e7e75e3e7d6" iid="e575caaf12e44fd0bd7fe62c518571bd" creation-date="01/29/2023 23:41:39" order-index="28" type="relation">
+            <layout start-role-position="25,15" end-role-position="25,-15" line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="true" auto-path="" x1="928" y1="402" x2="1131" y2="404" start-border-pos="0.371894409937888" end-border-pos="0.874472573839662" start-local-pos="79" end-local-pos="119" name-position="0,20">
+              <points>
+                <point x="928" y="402" />
+                <point x="1131" y="404" />
+              </points>
+            </layout>
+            <relation from="did46e915d6c2949bab6fe67bf5aa0143b7928" from-iid="cfa7ef4b76a343bc918ac183ff620fdd" from-field="a1a219212e4004aaa929fd6a99aa75e77696" to="dib1c4c064476a404fab5acbf5588c7c378076" to-iid="2e9c782155fa4b228c8fbdcfcfd8981a" />
+          </item>
+        </layer>
+      </diagram>
+    </model>
+  </models>
+</sim-project>
